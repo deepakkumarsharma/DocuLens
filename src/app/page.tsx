@@ -1,17 +1,8 @@
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-const Header = () => {
-  return (
-    <header className="border-bottom-only">
-      <div className="container">
-        <div className="w-full h-[4.5rem] border-x bg-white padding-x flex items-center justify-between">
-          <div className="font-extrabold">DocuLens</div>
-          <div>Sign In</div>
-        </div>
-      </div>
-    </header>
-  );
-};
+import Header from "@/components/global/Header";
+
+import { Button } from "@/components/ui/button";
 
 const SECTION_ONE = () => {
   return (
@@ -32,7 +23,11 @@ const SECTION_ONE = () => {
               exports results effortlessly.
             </div>
             <div className="flex gap-4">
-              <Button variant="outline">Get Started</Button>
+              <Link href="/dashboard">
+                <Button variant="outline" className="cursor-pointer">
+                  Get Started
+                </Button>
+              </Link>
               <Button>Learn More</Button>
             </div>
           </div>
