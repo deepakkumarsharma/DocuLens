@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 import { DialogClose } from "@radix-ui/react-dialog";
 
 import { useMutation } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
+import { api } from "../../../../../convex/_generated/api";
 import { Loader2Icon } from "lucide-react";
 import { useUser } from "@clerk/nextjs";
 
